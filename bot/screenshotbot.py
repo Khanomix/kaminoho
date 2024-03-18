@@ -20,6 +20,7 @@ log = logging.getLogger(__name__)
 class ScreenShotBot(Client):
     def __init__(self):
         super().__init__(
+            name="my_screenshot_bot",  # Provide a name here
             session_string=Config.SESSION_STRING,
             bot_token=Config.BOT_TOKEN,
             api_id=Config.API_ID,
